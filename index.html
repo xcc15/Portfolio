@@ -403,12 +403,12 @@
                         </h2>
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div className="space-y-6 text-[#C5C6C7] leading-relaxed">
-                            <p>
-                                Hello! I'm Dominic. My journey into Data Science began with a curiosity for patterns and a love for solving complex problems. I bridge the gap between raw data and actionable insights.
+                            <p className="text-justify">
+                                Hello! I'm Dominic. An aspiring data scientist with hands-on experience in data analysis, visualization, and real-world datasets. Currently a data science student, I focus transforming raw data into clear insights that support data-driven decisions.
                             </p>
                             <div className="p-4 bg-[#1F2833] border-l-2 border-[#66FCF1] rounded-r-lg transform hover:scale-105 transition-transform duration-300">
                                 <p className="italic text-sm text-[#45A29E] font-mono">
-                                "Data is not just numbers; it's the voice of the business waiting to be heard."
+                                "The goal is to turn data into information, and information into insight."
                                 </p>
                             </div>
                             <ul className="space-y-4 mt-4">
@@ -427,6 +427,13 @@
                                 </div>
                                 </li>
                                 <li className="flex items-start gap-3 group">
+                                <div className="p-2 bg-[#1F2833] rounded text-[#66FCF1] mt-1 shrink-0 group-hover:bg-[#66FCF1] group-hover:text-[#0B0C10] transition-all"><BarChart size={16} /></div>
+                                <div>
+                                    <strong className="text-white cyber-font">Dashboarding</strong>
+                                    <p className="text-sm">Translating complex data into clear, compelling visual stories.</p>
+                                </div>
+                                </li>
+                                <li className="flex items-start gap-3 group">
                                 <div className="p-2 bg-[#1F2833] rounded text-[#66FCF1] mt-1 shrink-0 group-hover:bg-[#66FCF1] group-hover:text-[#0B0C10] transition-all"><Code size={16} /></div>
                                 <div>
                                     <strong className="text-white cyber-font">Machine Learning</strong>
@@ -437,11 +444,22 @@
                             </div>
                             <div className="relative group perspective-1000">
                             <div className="absolute -inset-1 bg-gradient-to-r from-[#66FCF1] to-[#45A29E] rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                            <div className="relative aspect-square rounded-2xl bg-[#1F2833] border border-[#45A29E]/20 flex items-center justify-center p-8 transform group-hover:rotate-1 transition-transform duration-500">
-                                <div className="text-center space-y-4">
-                                <div className="text-6xl mb-2 drop-shadow-[0_0_10px_rgba(102,252,241,0.5)] animate-bounce">📊</div>
-                                <h3 className="text-xl font-semibold text-white cyber-font">Data-Driven</h3>
-                                <p className="text-sm text-[#45A29E] font-mono">import insights as value</p>
+                            <div className="relative aspect-square rounded-2xl bg-[#1F2833] border border-[#45A29E]/20 overflow-hidden transform group-hover:rotate-1 transition-transform duration-500">
+                                <img 
+                                    src="image_d32206.jpg" 
+                                    alt="Dominic Lumibao" 
+                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105"
+                                    onError={(e) => {
+                                        e.target.onerror = null; 
+                                        e.target.src = "https://ui-avatars.com/api/?name=Dominic+Lumibao&background=1F2833&color=66FCF1&size=512";
+                                    }}
+                                />
+                                {/* Cyber Overlay Gradient */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-transparent to-transparent opacity-60"></div>
+                                
+                                <div className="absolute bottom-6 left-6 text-left">
+                                    <h3 className="text-xl font-semibold text-white cyber-font drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">Data-Driven</h3>
+                                    <p className="text-sm text-[#45A29E] font-mono drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">import insights as value</p>
                                 </div>
                             </div>
                             </div>
